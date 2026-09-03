@@ -35,8 +35,7 @@ class DiffDriveKinematics(Kinematics):
         inverse_result = self.M_inverse @ velocity_array 
         return inverse_result
 
-robot = DiffDriveKinematics(4,7,8)
-print(robot.inverse(8,9,9))
-
+robot = DiffDriveKinematics(2, 4, 6)
+print(robot.inverse(24, 0, -6))
 
 
