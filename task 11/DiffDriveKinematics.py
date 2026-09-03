@@ -32,10 +32,11 @@ class DiffDriveKinematics(Kinematics):
         
     def inverse(self, vx, vy, wz): 
         velocity_array = np.array([vx,vy,wz])
-        inverse_result = self.M_inverse @ omeage_array 
+        inverse_result = self.M_inverse @ velocity_array 
         return inverse_result
 
-
+robot = DiffDriveKinematics(4,7,8)
+print(robot.inverse(8,9,9))
 
 
 
