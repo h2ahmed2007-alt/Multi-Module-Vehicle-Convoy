@@ -7,7 +7,7 @@ from geometry_msgs.msg import TransformStamped
 import tf2_ros
 
 # Import approved kinematics library
-from robot_kinematics import (
+from kinematics import (
     DiffDriveKinematics,
     MecanumKinematics,
     ThreeWheelOmniKinematics,
